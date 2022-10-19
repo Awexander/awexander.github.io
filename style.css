@@ -1,167 +1,35 @@
 body {
-    margin: 0%;
-    background-color: rgb(38, 38, 38);
+    background-color: black;
 }
 
-.title {
-    background-color: rgb(143, 8, 26);
-    margin: 0;
-    padding: 1px;
-
+div.name {
     display: grid;
-    grid-template-columns: 30px 100px;
-}
-
-.playtube {
-    color: white;
-    height: 100%;
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    margin-top: 0;
-}
-
-.playtube-title {
     margin: 0;
+    height: 64px;
+    grid-template-columns: 100px 1fr 100px;
 }
 
-.searchicon {
-    justify-content: right;
-    display: inline-block;
-}
-
-.yt-icon {
-    display: inline-block;
-    justify-content: left;
-    vertical-align: middle;
-    padding: 5px;
-}
-
-.nav {
-    margin: 10px;
-    padding: 10px;
-    color: white;
-    text-align: left;
-    font-size: 30px;
-    font: sans-serif;
-    display: inline;
-}
-
-.thumbnails {
-    padding: 0;
-    background-color: white;
-}
-
-head {
-    margin: auto;
-    background-color: blue;
-}
-
-.input-box-div {
-    margin-top: 20px;
-    padding: 5px;
-}
-
-.input-box-form {
-    width: 100%;
-    height: 40px;
+div.columns {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.input-box-input {
-    width: 80%;
-    display: inline;
-    justify-content: center;
-    border: 1px solid black;
-}
-
-.button-go {
-    display: inline;
-    width: 10%;
-    margin: 0;
-    padding: 2px;
-    background-color: rgb(177, 103, 246);
-    border: 1px solid rgb(177, 103, 246);
-}
-
-.buttons {
-    display: flex;
-    justify-content: center;
-}
-
-button.subs-button {
-    width: 110px;
-    height: 40px;
-    background-color: rgb(192, 0, 0);
-    text-align: center;
-    cursor: pointer;
-    color: white;
-    border-width: 0px;
-    border-radius: 2px;
-    margin: 10px;
-    padding: 10px;
-
-    transition: border-radius 0.5s, opacity 0.5s
-}
-
-button.join-button {
-    height: 40px;
-    width: 60px;
-    margin: 10px;
-    background-color: white;
-    border-radius: 2px;
-    text-align: center;
-    cursor: pointer;
-    color: rgb(29, 29, 226);
-    border-style: solid;
-    border-color: rgb(29, 29, 226);
-    border-width: 1px;
-
-    transition: border-radius 0.75s,
-        opacity 0.75s,
-        color 0.75s;
-}
-
-button.tweet-button {
-    height: 40px;
-    width: 80px;
-    margin: 10px;
-    background-color: rgb(0, 166, 255);
-    border-radius: 20px;
-    border-width: 0px;
-    color: white;
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-button.subs-button:hover {
-    opacity: 0.8;
-    border-radius: 20px;
-}
-
-button.join-button:hover {
-    opacity: 0.8;
-    background-color: rgb(29, 29, 226);
+    font-size: 500%;
     color: white;
-    border-radius: 20px;
+    margin: 0;
+    padding-left: 20px;
 }
 
-button.tweet-button:hover {
+.image {
+    width: 64px;
+    height: 64px;
+}
+
+.image:hover {
+    cursor: pointer;
     opacity: 0.8;
-}
-
-.now-playing-div {
-    display: flex;
-    justify-content: center;
-    margin: 10px;
-}
-
-.now-playing {
-    width: 500px;
-    height: 500px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 50%;
 }
