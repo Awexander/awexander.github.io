@@ -1,35 +1,111 @@
-body {
-    background-color: black;
+:root {
+    --nav-bar-height: 32px;
+    --layout-gap: 20px;
+    --layout-sidebar-width: 220px;
 }
 
-div.name {
+body {
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar {
+    z-index: 32;
     display: grid;
     margin: 0;
-    height: 64px;
+    height: var(--nav-bar-height);
     grid-template-columns: 100px 1fr 100px;
+    padding: 16px;
+    align-items: center;
+    line-height: 1.5;
+    background-color: black;
+
+    transition: opacity 0.5s;
 }
 
 div.columns {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: var(--nav-bar-height);
 }
 
-p {
+h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
-    font-size: 500%;
+    font-size: xx-large;
     color: white;
     margin: 0;
     padding-left: 20px;
 }
 
+p {
+    margin: 0;
+    padding: 0;
+
+}
+
 .image {
-    width: 64px;
-    height: 64px;
+    display: inline-block;
+    width: var(--nav-bar-height);
+    height: var(--nav-bar-height);
 }
 
 .image:hover {
     cursor: pointer;
     opacity: 0.8;
+}
+
+.page-break-space {
+    height: 1px;
+    margin: 0;
+    border: 0;
+}
+
+.line-break {
+    margin-top: 15px;
+    height: 1px;
+    background-color: black;
+}
+
+.content-layout {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 0 minmax(100% - var(--layout-sidebar-width));
+    height: var(--nav-bar-height);
+}
+
+a {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+}
+
+
+.nav-panels {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.nav-items {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 10px;
+    justify-content: center;
+}
+
+.nav-items:hover {
+    background-color: rgb(137, 197, 231);
+    color: black;
+    opacity: 0.1;
+    border-radius: 30%;
+}
+
+.about-panel {
+    width: var(--layout-sidebar-width);
 }
